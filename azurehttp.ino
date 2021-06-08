@@ -1,8 +1,6 @@
 //espboard:2.5.2
 #define BLYNK_PRINT Serial
 
-
-//Azure IoT Hub + DHT11 + NodeMCU ESP8266 Experiment Done By Prasenjit Saha
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266HTTPClient.h>
@@ -31,8 +29,6 @@ const String AzureIoTHubAuth="SharedAccessSignature sr=smartenergy.azure-devices
 
 void setup() {
   Serial.begin(9600);
-  
-  Serial.println("ESP8266 starting in normal mode");
   // Connect to WiFi
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
