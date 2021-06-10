@@ -44,7 +44,7 @@ void loop()
 
        vdata = vdata + "Voltage = " + sdata1 + "V";
        idata = idata + "Current = " + sdata2 + "A";
-       edata = edata + "Energy = " + sdata4 + "kWh";
+       edata = edata + "Energy = " + sdata4 + "W";
        pdata = pdata + "Power = " + sdata3 + "kWh";
  
        display.setCursor(0,0);
